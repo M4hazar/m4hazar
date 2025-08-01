@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>M4hazar | Dev</title>
+    <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@300;400;500;700&amp;display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Particles Background -->
+    <div id="particles"></div>
+    
+    <!-- Progress Bar -->
+    <div class="progress-bar">
+        <div class="progress-fill"></div>
+    </div>
+
+    <!-- Header -->
+    <header class="header">
+        <div class="container">
+            <div class="logo">
+                <span class="neon-text">&lt;M4hazar/&gt;</span>
+            </div>
+            <nav class="nav">
+                <a href="#home" class="nav-link">Home</a>
+                <a href="#about" class="nav-link">O mnie</a>
+                <a href="#skills" class="nav-link">Umiejętności</a>
+                <a href="#contact" class="nav-link">Kontakt</a>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <h1 class="hero-title">
+                    Cześć, jestem <span class="neon-text">M4hazar</span>
+                </h1>
+                <div class="typewriter">
+                    <span id="typewriter-text"></span>
+                    <span class="cursor">|</span>
+                </div>
+                <p class="hero-description">
+                    Tworzę nowoczesne aplikacje, boty Discord oraz strony internetowe. Specjalizuję się w botach Discord, stronach www i innych rozwiązaniach.
+                </p>
+                <div class="hero-buttons">
+                    <button class="btn btn-primary" onclick="scrollToSection('contact')">
+                        Skontaktuj się
+                    </button>
+                    <button class="btn btn-secondary" onclick="scrollToSection('about')">
+                        Dowiedz się więcej
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="container">
+            <h2 class="section-title">O mnie</h2>
+            <div class="about-content">
+                <div class="about-text">
+                    <p>
+                        Jestem pasjonatem programowania z Polski, specjalizującym się w tworzeniu nowoczesnych aplikacji internetowych oraz botów Discord. Moja przygoda z kodowaniem zaczęła się kilka lat temu i od tamtej pory stale rozwijam swoje umiejętności.
+                    </p>
+                    <p>
+                        Tworzę projekty, które nie tylko działają niezawodnie, ale również wyróżniają się estetyką. Zawsze śledzę najnowsze technologie i trendy w branży IT.
+                    </p>
+                </div>
+                <div class="stats">
+                    <div class="stat">
+                        <span class="stat-number neon-text">2020</span>
+                        <span class="stat-label">Rok</span>
+                    </div>
+                    <div class="stat">
+                        <span class="stat-number neon-text">∞</span>
+                        <span class="stat-label">Kreatywność</span>
+                    </div>
+                    <div class="stat">
+                        <span class="stat-number neon-text">24/7</span>
+                        <span class="stat-label">Dostępność</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="skills">
+        <div class="container">
+            <h2 class="section-title">Umiejętności</h2>
+            <div class="skills-grid">
+                <div class="skill-card">
+                    <div class="skill-icon">🐍</div>
+                    <h3>Python</h3>
+                    <p>Backend, automatyzacja i boty Discord</p>
+                </div>
+                <div class="skill-card">
+                    <div class="skill-icon">⚛️</div>
+                    <h3>React</h3>
+                    <p>Nowoczesne aplikacje webowe i interfejsy użytkownika</p>
+                </div>
+                <div class="skill-card">
+                    <div class="skill-icon">🟨</div>
+                    <h3>JavaScript</h3>
+                    <p>Frontend i backend (Node.js)</p>
+                </div>
+                <div class="skill-card">
+                    <div class="skill-icon">🌐</div>
+                    <h3>HTML/CSS</h3>
+                    <p>Responsywne strony i nowoczesny design</p>
+                </div>
+                <div class="skill-card">
+                    <div class="skill-icon">🤖</div>
+                    <h3>Discord Bots</h3>
+                    <p>Zaawansowane boty z wieloma funkcjami</p>
+                </div>
+                <div class="skill-card">
+                    <div class="skill-icon">🎨</div>
+                    <h3>UI/UX Design</h3>
+                    <p>Projektowanie intuicyjnych interfejsów użytkownika</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <h2 class="section-title">Kontakt</h2>
+            <div class="contact-content">
+                <p class="contact-description">
+                    Masz projekt do zrealizowania? Potrzebujesz pomocy z botem Discord lub stroną internetową? Napisz do mnie!
+                </p>
+                <div class="contact-methods">
+                    <div class="contact-card" onclick="copyToClipboard('m4hazar')">
+                        <div class="contact-icon discord">
+                            <svg viewBox="0 0 24 24" fill="currentColor">
+                                <path d="M20.317 4.37a19.791 19.791 0 0 0-4.885-1.515a.074.074 0 0 0-.079.037c-.211.375-.445.864-.608 1.25a18.27 18.27 0 0 0-5.487 0a12.64 12.64 0 0 0-.617-1.25a.077.077 0 0 0-.079-.037A19.736 19.736 0 0 0 3.677 4.37a.07.07 0 0 0-.032.027C.533 9.046-.32 13.58.099 18.057a.082.082 0 0 0 .031.057a19.9 19.9 0 0 0 5.993 3.03a.078.078 0 0 0 .084-.028a14.09 14.09 0 0 0 1.226-1.994a.076.076 0 0 0-.041-.106a13.107 13.107 0 0 1-1.872-.892a.077.077 0 0 1-.008-.128a10.2 10.2 0 0 0 .372-.292a.074.074 0 0 1 .077-.01c3.928 1.793 8.18 1.793 12.062 0a.074.074 0 0 1 .078.01c.12.098.246.198.373.292a.077.077 0 0 1-.006.127a12.299 12.299 0 0 1-1.873.892a.077.077 0 0 0-.041.107c.36.698.772 1.362 1.225 1.993a.076.076 0 0 0 .084.028a19.839 19.839 0 0 0 6.002-3.03a.077.077 0 0 0 .032-.054c.5-5.177-.838-9.674-3.549-13.66a.061.061 0 0 0-.031-.03zM8.02 15.33c-1.183 0-2.157-1.085-2.157-2.419c0-1.333.956-2.419 2.157-2.419c1.21 0 2.176 1.096 2.157 2.42c0 1.333-.956 2.418-2.157 2.418zm7.975 0c-1.183 0-2.157-1.085-2.157-2.419c0-1.333.955-2.419 2.157-2.419c1.21 0 2.176 1.096 2.157 2.42c0 1.333-.946 2.418-2.157 2.418z"/>
+                            </svg>
+                        </div>
+                        <div class="contact-info">
+                            <h3>Discord</h3>
+                            <p>M4hazar</p>
+                            <span class="copy-hint">Kliknij aby skopiować</span>
+                        </div>
+                    </div>
+                    
+                    <div class="contact-card" onclick="window.open('https://t.me/M4hazar', '_blank')">
+                        <div class="contact-icon telegram">
+                            <svg viewBox="0 0 24 24" fill="currentColor">
+                                <path d="m20.665 3.717-17.73 6.837c-1.21.486-1.203 1.161-.222 1.462l4.552 1.42 10.532-6.645c.498-.303.953-.14.579.192l-8.533 7.701h-.002l.002.001-.314 4.692c.46 0 .663-.211.921-.46l2.211-2.15 4.599 3.397c.848.467 1.457.227 1.668-.785L24 5.408c.321-1.279-.541-1.835-1.335-1.691z"/>
+                            </svg>
+                        </div>
+                        <div class="contact-info">
+                            <h3>Telegram</h3>
+                            <p>@M4hazar</p>
+                            <span class="copy-hint">Kliknij aby otworzyć</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; © 2020-2025 M4hazar. Wszelkie prawa zastrzeżone.</p>
+        </div>
+    </footer>
+
+    <!-- Toast Notification -->
+    <div id="toast" class="toast">
+        <span id="toast-message"></span>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
